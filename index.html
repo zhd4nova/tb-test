@@ -6,10 +6,37 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
-    <title>zhdanov</title>
+    <title>TextBack: wi</title>
+
+    <style>
+      body {
+        background-color: #fee2e3;
+      }
+    </style>
   </head>
 
   <body>
-    <div>Hello, world!</div>
+    <script type="text/javascript" encoding="utf-8">
+      var _tbEmbedArgs = _tbEmbedArgs || [];
+      (function () {
+        var u = "https://widget.textback.io/widget";
+        _tbEmbedArgs.push(["widgetId", "6fff27c1-730e-4cdd-8b1c-5096d9a36432"]);
+        _tbEmbedArgs.push(["baseUrl", u]);
+
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.charset = "utf-8";
+        g.defer = true;
+        g.async = true;
+        g.src = u + "/widget.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+
+    <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+    <tb-notification-widget widget-id="2146116f-e221-af82-94b5-016eff346782">
+    </tb-notification-widget>
   </body>
 </html>
